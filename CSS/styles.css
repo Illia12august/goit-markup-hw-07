@@ -1,0 +1,36 @@
+/* background-color: #E5E5E5*/
+/* main color: #434455 */
+/* second color: #2E2F42 */
+/* white color: #FFFFFF */
+/* footer color: #E7E9FC */
+/* logo colors; #4D5AE5
+#2E2F42 */
+
+body {
+  background-color: #e5e5e5;
+  color: #434455;
+}
+.list {
+  list-style: none;
+}
+
+/* header */
+/* logo */
+.logo,
+.logo-web:hover,
+.logo-web:focus {
+  color: #2e2f42;
+}
+.logo-web,
+.logo:hover,
+.logo:focus {
+  color: #4d5ae5;
+}
+
+/* site nav */
+.site-nav a {
+  color: #2e2f42;
+}
+.site-nav a:hover {
+  color: #434455;
+}
