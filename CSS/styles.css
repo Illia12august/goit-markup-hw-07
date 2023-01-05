@@ -1,36 +1,126 @@
 /* background-color: #E5E5E5*/
-/* main color: #434455 */
-/* second color: #2E2F42 */
+/* primary color: #434455 */
+/* secondary color: #2E2F42 */
 /* white color: #FFFFFF */
 /* footer color: #E7E9FC */
-/* logo colors; #4D5AE5
-#2E2F42 */
+/* logo colors; #4D5AE5  #2E2F42 */
+/* button collor: #4D5AE5 */
+
+:root {
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --logo-text-color: #4d5ae5;
+  --white-color: #ffffff;
+}
 
 body {
-  background-color: #e5e5e5;
-  color: #434455;
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+}
+header {
+  background-color: var(--white-color);
+}
+h2 {
+  color: var(--secondary-text-color);
+}
+footer {
+  background-color: var(--secondary-text-color);
 }
 .list {
   list-style: none;
 }
-
-/* header */
-/* logo */
+.section {
+  background-color: var(--white-color);
+}
+.site-nav .current {
+  color: var(--logo-text-color);
+}
 .logo,
 .logo-web:hover,
 .logo-web:focus {
-  color: #2e2f42;
+  color: var(--secondary-text-color);
 }
 .logo-web,
 .logo:hover,
 .logo:focus {
+  color: var(--logo-text-color);
+}
+
+/* index.html */
+/* header */
+/* site nav */
+.site-nav a {
+  color: var(--secondary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:active {
+  color: var(--logo-text-color);
+}
+
+/* phone and email */
+.address-nav a {
+  color: var(--primary-text-color);
+}
+.address-nav a:hover,
+.address-nav a:active {
+  color: var(--logo-text-color);
+}
+
+/* main */
+/* hero */
+.hero {
+  background-color: var(--secondary-text-color);
+}
+.hero-title {
+  color: var(--white-color);
+}
+.button-primary {
+  background-color: var(--logo-text-color);
+  border: none;
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
+  color: var(--white-color);
+}
+.button-primary:hover,
+.button-primary:active {
+  background-color: var(--white-color);
+  border: none;
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
   color: #4d5ae5;
 }
 
-/* site nav */
-.site-nav a {
-  color: #2e2f42;
+/* features */
+.features-list .title {
+  color: var(--secondary-text-color);
 }
-.site-nav a:hover {
-  color: #434455;
+.features-list .paragraph {
+  color: var(--primary-text-color);
 }
+
+/* our team */
+.our-team {
+  background-color: #f4f4fd;
+}
+.employee-name {
+  color: var(--secondary-text-color);
+}
+.employee-work {
+  color: var(--primary-text-color);
+}
+
+/* footer */
+footer .logo {
+  color: var(--white-color);
+}
+footer .logo-web:hover,
+footer .logo-web:focus {
+  color: var(--white-color);
+}
+footer .paragraph {
+  color: var(--white-color);
+}
+
+/*  */
