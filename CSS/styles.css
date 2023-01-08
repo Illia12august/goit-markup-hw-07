@@ -123,4 +123,21 @@ footer .paragraph {
   color: var(--white-color);
 }
 
-/*  */
+/* portfolio */
+.button-secondary {
+  background-color: #f4f4fd;
+  border: none;
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
+  color: #4d5ae5;
+}
+.button-secondary:hover,
+.button-secondary:active {
+  background-color: #4d5ae5;
+  border: none;
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
+  color: var(--white-color);
+}
