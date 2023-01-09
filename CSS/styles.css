@@ -27,6 +27,9 @@ h2 {
 footer {
   background-color: var(--secondary-text-color);
 }
+button {
+  font-family: inherit;
+}
 .list {
   list-style: none;
 }
@@ -39,8 +42,14 @@ footer {
 .logo,
 .logo-web:hover,
 .logo-web:focus {
+  text-decoration: none;
   color: var(--secondary-text-color);
-  font-family: Raleway, cursive;
+  font-family: Raleway;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .logo-web,
 .logo:hover,
@@ -53,15 +62,28 @@ footer {
 /* site nav */
 .site-nav a {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav a:hover,
 .site-nav a:active {
   color: var(--logo-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 /* phone and email */
 .address-nav a {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .address-nav a:hover,
 .address-nav a:active {
