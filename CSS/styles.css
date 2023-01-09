@@ -16,6 +16,7 @@
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
 }
 header {
   background-color: var(--white-color);
@@ -39,6 +40,7 @@ footer {
 .logo-web:hover,
 .logo-web:focus {
   color: var(--secondary-text-color);
+  font-family: Raleway, cursive;
 }
 .logo-web,
 .logo:hover,
