@@ -10,7 +10,7 @@ body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.02em;
+  font-size: 16px;
 }
 header {
   background-color: var(--white-color);
@@ -40,9 +40,7 @@ a {
 }
 
 /* logo */
-.logo,
-.logo-web:hover,
-.logo-web:focus {
+.logo {
   color: var(--secondary-text-color);
   font-family: Raleway;
   font-weight: 800;
@@ -51,17 +49,13 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.logo-web,
-.logo:hover,
-.logo:focus {
+.logo-web {
   color: var(--logo-text-color);
 }
 
 /* buttons */
 .button {
   border: none;
-  height: 56px;
-  width: 169px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -69,9 +63,12 @@ a {
   color: var(--white-color);
   background-color: var(--logo-text-color);
   font-weight: 500;
-  font-size: 16px;
+  padding: 16px 32px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  width: 169px;
+  height: 56px;
 }
 .button-primary:hover,
 .button-primary:focus,
@@ -83,9 +80,10 @@ a {
   color: #4d5ae5;
   background-color: #f4f4fd;
   font-weight: 500;
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
   border: 1px solid #e7e9fc;
+  padding: 12px, 24px, 12px, 24px;
 }
 .button-secondary:hover,
 .button-secondary:focus,
@@ -107,31 +105,31 @@ a {
 /* index.html */
 /* header */
 /* site nav */
-.site-nav a {
+.nav-link {
   color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
-.site-nav a:hover,
-.site-nav a:focus,
-.site-nav a:active {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
   color: var(--logo-text-color);
   font-weight: 500;
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
 /* phone and email */
-.address-nav a {
+.contact-link {
   color: var(--primary-text-color);
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
   font-style: normal;
 }
-.address-nav a:hover,
-.address-nav a:focus,
-.address-nav a:active {
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
   color: var(--logo-text-color);
 }
 
@@ -143,26 +141,27 @@ a {
 .hero-title {
   color: var(--white-color);
   font-size: 56px;
+  letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
 }
 
 /* features */
-.features-list .title {
+.section-subtitle {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 20px;
+  letter-spacing: 0.02em;
   line-height: 1.2;
 }
-.features-list .paragraph {
+.section-text {
   color: var(--primary-text-color);
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
 /* what are we doing */
-.work-title,
-.our-team-title {
+.section-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -172,17 +171,6 @@ a {
 /* our team */
 .our-team {
   background-color: #f4f4fd;
-}
-.employee-name {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-.employee-work {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 /* footer */
@@ -195,26 +183,15 @@ footer .logo {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-footer .logo-web:hover,
-footer .logo-web:focus,
-footer .logo-web:active {
+.footer-text {
   color: var(--white-color);
-}
-footer .paragraph {
-  color: var(--white-color);
-  font-size: 16px;
+  letter-spacing: 0.02em;
   line-height: 1.5;
 }
 
 /* portfolio */
 /* main */
 /* proects */
-.proect-list h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--secondary-text-color);
-}
 .proect-list p {
   font-size: 16px;
   line-height: 1.5;
