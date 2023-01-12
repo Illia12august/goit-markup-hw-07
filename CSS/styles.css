@@ -49,7 +49,9 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.logo-web {
+.logo-web,
+.logo:hover,
+.logo:focus {
   color: var(--logo-text-color);
 }
 
