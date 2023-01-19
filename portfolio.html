@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <title>Document</title>
@@ -12,111 +14,138 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!-- logo -->
-            <a href="./index.html" class="logo"><span class="logo-web">web</span>studio</a>
-            <!-- links -->
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="nav-link">Studio</a></li>
-                <li><a href="./portfolio.html" class="nav-link current">Portfolio</a></li>
-                <li><a href="" class="nav-link">Contacts</a></li>
-            </ul>
-        </nav>
-        <!-- email and phone -->
-        <address class="contact-info">
-            <ul class="address-nav list">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+11(000)1111111" class="contact-link">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
-
+    <header class="page-header">
+        <div class="container header-flex">
+            <nav>
+                <!-- logo -->
+                <div class="box">
+                    <a href="./index.html" class="logo"><span class="logo-web">web</span>studio</a>
+                    <!-- links -->
+                    <ul class="site-nav list">
+                        <li><a href="./index.html" class="nav-link">Studio</a></li>
+                        <li><a href="./portfolio.html" class="nav-link current">Portfolio</a></li>
+                        <li><a href="" class="nav-link">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- email and phone -->
+            <address class="contact-info">
+                <ul class="address-nav list">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+11(000)1111111" class="contact-link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
+
         <section class="choose-section section">
-            <h1 hidden>Portfolio</h1>
-            <ul class="button-list list">
-                <li>
+            <div class="container">
+                <h1 hidden>Portfolio</h1>
+                <ul class="button-list list">
+                    <li>
 
-                    <button type="button" class="button button-secondary">All</button>
-                </li>
-                <li>
+                        <button type="button" class="button button-secondary">All</button>
+                    </li>
+                    <li>
 
-                    <button type="button" class="button button-secondary">Website</button>
-                </li>
-                <li>
+                        <button type="button" class="button button-secondary">Website</button>
+                    </li>
+                    <li>
 
-                    <button type="button" class="button button-secondary">App</button>
-                </li>
-                <li>
+                        <button type="button" class="button button-secondary">App</button>
+                    </li>
+                    <li>
 
-                    <button type="button" class="button button-secondary">Design</button>
-                </li>
+                        <button type="button" class="button button-secondary">Design</button>
+                    </li>
 
 
-                <li>
-                    <button type="button" class="button button-secondary">Marketing</button>
-                </li>
-            </ul>
-            <ul class="proects-list list">
-                <li>
-                    <img src="./images/banking-app-interface-concept.jpg" alt="">
-                    <h3>Banking App Interface Concept</h3>
-                    <p class="section-text">App</p>
-                </li>
-                <li>
-                    <img src="./images/scanning.jpg" alt="">
-                    <h3 class="section-subtitle">Cashless Payment</h3>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/laptop.jpg" alt="">
-                    <h3 class="section-subtitle">Meditaion App</h3>
-                    <p class="section-text">App</p>
-                </li>
-                <li>
-                    <img src="./images/car-driving.jpg" alt="">
-                    <h3>Taxi Service</h3>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/screen.jpg" alt="">
-                    <h3 class="section-subtitle">Screen Illustrations</h3>
-                    <p class="section-text">Design</p>
-                </li>
-                <li>
-                    <img src="./images/girl-listening- to-musik.jpg" alt="">
-                    <h3 class="section-subtitle">Online Courses</h3>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/stories.jpg" alt="">
-                    <h3 class="section-subtitle">Instagram Stories Concept</h3>
-                    <p class="section-text">Design</p>
-                </li>
-                <li>
-                    <img src="./images/fresh-food.jpg" alt="">
-                    <h3 class="section-subtitle">Organic Food</h3>
-                    <p class="section-text">Web Site</p>
-                </li>
-                <li>
-                    <img src="./images/coffee.jpg" alt="">
-                    <h3 class="section-subtitle">Fresh Coffee</h3>
-                    <p class="section-text">Web Site</p>
-                </li>
-            </ul>
+                    <li>
+                        <button type="button" class="button button-secondary">Marketing</button>
+                    </li>
+                </ul>
+                <ul class="projects-list list">
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/banking-app-interface-concept.jpg" alt="Banking App Interface Concept"
+                                class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Banking App Interface Concept</h3>
+                            <p class="section-text">App</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/scanning.jpg" alt="Cashless Payment" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Cashless Payment</h3>
+                            <p class="section-text">Marketing</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/laptop.jpg" alt="Meditaion App" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Meditaion App</h3>
+                            <p class="section-text">App</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/car-driving.jpg" alt="Taxi Service" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Taxi Service</h3>
+                            <p class="section-text">Marketing</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/screen.jpg" alt="Screen Illustrations" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Screen Illustrations</h3>
+                            <p class="section-text">Design</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/girl-listening- to-musik.jpg" alt="Online Courses" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Online Courses</h3>
+                            <p class="section-text">Marketing</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/stories.jpg" alt="Instagram Stories Concept" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Instagram Stories Concept</h3>
+                            <p class="section-text">Design</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/fresh-food.jpg" alt="Organic Food" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Organic Food</h3>
+                            <p class="section-text">Web Site</p>
+                        </a>
+                    </li>
+                    <li class="project-container">
+                        <a href="">
+                            <img src="./images/coffee.jpg" alt="Fresh Coffee" class="section-photo">
+                            <h3 class="section-subtitle project-subtitle">Fresh Coffee</h3>
+                            <p class="section-text">Web Site</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
     <footer>
-        <a href="./index.html" class="logo"><span class="logo-web">web</span>studio</a>
-        <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
-            growth
-            solutions.</p>
+        <div class="container footer-container">
+            <a href="./index.html" class="logo"><span class="logo-web">web</span>studio</a>
+            <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
+                growth
+                solutions.</p>
+        </div>
     </footer>
 </body>
 
