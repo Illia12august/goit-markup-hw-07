@@ -4,6 +4,8 @@
   --secondary-text-color: #2e2f42;
   --logo-text-color: #4d5ae5;
   --white-color: #ffffff;
+  --fill-color-hover: #404bbf;
+  --fill-color: #8e8f99;
 }
 
 body {
@@ -94,8 +96,7 @@ img {
 .button-primary:hover,
 .button-primary:focus,
 .button-primary:active {
-  background-color: var(--white-color);
-  color: #4d5ae5;
+  background-color: #404bbf;
 }
 .button-secondary {
   color: #4d5ae5;
@@ -184,7 +185,6 @@ img {
 /* main */
 /* hero */
 .hero {
-  background-color: var(--secondary-text-color);
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -196,6 +196,21 @@ img {
   line-height: 1.07;
   width: 507px;
   margin: 0 auto 48px;
+}
+.overlay {
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/people-office.jpg);
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 600px;
 }
 
 /* features */
@@ -219,8 +234,20 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.5;
   width: 264px;
+  margin-bottom: 8px;
 }
-
+.svg-container {
+  background-color: #f4f4fd;
+  width: 264px;
+  border-radius: 4px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+.svg-item {
+  display: block;
+  margin: auto;
+}
 /* what are we doing */
 .image-list {
   display: flex;
@@ -237,8 +264,6 @@ img {
 /* our team */
 .our-team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .employee-list {
   display: flex;
@@ -259,6 +284,52 @@ img {
   display: block;
   margin-bottom: 32px;
 }
+.soical-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  background-color: var(--logo-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.social-link:hover {
+  background-color: var(--fill-color-hover);
+}
+.svg-social {
+  width: 16px;
+  height: 16px;
+}
+/* Customers */
+.svg-button {
+  width: 168px;
+  height: 88px;
+  background-color: var(--white-color);
+  border: 1px solid var(--fill-color);
+  border-radius: 4px;
+}
+.svg-button:hover {
+  border: 1px solid var(--fill-color-hover);
+}
+.customer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.svg-img {
+  width: 104px;
+  height: 56px;
+  fill: var(--fill-color);
+}
+.svg-button:hover .svg-img {
+  fill: var(--fill-color-hover);
+}
 /* footer */
 .footer {
   padding-top: 100px;
@@ -276,15 +347,41 @@ footer .logo {
   margin: 0;
   margin-bottom: 16px;
 }
-
 .footer-text {
   color: var(--white-color);
   letter-spacing: 0.02em;
   line-height: 1.5;
   width: 264px;
 }
-
+.footer-flex {
+  display: flex;
+  gap: 120px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-social-link:hover {
+  background-color: #31d0aa;
+}
+.footer-social-svg {
+  width: 24px;
+}
 /* portfolio */
+/* header */
+.header-portfolio {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 /* main */
 /* button list */
 .choose-section {
