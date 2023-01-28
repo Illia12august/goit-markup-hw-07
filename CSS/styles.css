@@ -237,6 +237,9 @@ img {
   width: 264px;
   margin-bottom: 8px;
 }
+.about-text {
+  margin-bottom: 0;
+}
 .svg-container {
   background-color: #f4f4fd;
   border-radius: 4px;
