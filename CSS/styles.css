@@ -209,6 +209,7 @@ img {
   margin-right: auto;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   max-width: 1440px;
   height: 600px;
 }
@@ -238,15 +239,15 @@ img {
 }
 .svg-container {
   background-color: #f4f4fd;
-  width: 264px;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 8px;
+  height: 112px;
 }
 .svg-item {
   display: block;
-  margin: auto;
 }
 /* what are we doing */
 .image-list {
@@ -298,7 +299,8 @@ img {
   height: 40px;
   border-radius: 50%;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--fill-color-hover);
 }
 .svg-social {
@@ -313,21 +315,30 @@ img {
   border: 1px solid var(--fill-color);
   border-radius: 4px;
 }
-.svg-button:hover {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--fill-color-hover);
 }
 .customer-list {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 24px;
 }
 .svg-img {
+  display: block;
   width: 104px;
   height: 56px;
   fill: var(--fill-color);
 }
-.svg-button:hover .svg-img {
+.customers-link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+}
+.customers-link:hover .svg-img,
+.customers-link:focus .svg-img {
   fill: var(--fill-color-hover);
 }
 /* footer */
@@ -355,7 +366,9 @@ footer .logo {
 }
 .footer-flex {
   display: flex;
-  gap: 120px;
+}
+.footer-first {
+  margin-right: 120px;
 }
 .footer-social-list {
   display: flex;
@@ -370,11 +383,16 @@ footer .logo {
   justify-content: center;
   border-radius: 50%;
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 .footer-social-svg {
   width: 24px;
+}
+.svg-footer {
+  width: 24px;
+  height: 24px;
 }
 /* portfolio */
 /* header */
@@ -413,4 +431,9 @@ footer .logo {
 
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+.project-link:hover {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
