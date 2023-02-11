@@ -405,6 +405,7 @@ footer .logo {
 }
 .footer-text {
   width: 264px;
+  margin-bottom: 16px;
   color: var(--white-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -414,6 +415,12 @@ footer .logo {
 }
 .footer-first {
   margin-right: 120px;
+}
+.footer-second {
+  width: 208px;
+}
+.footer-third {
+  margin-left: auto;
 }
 .footer-social-list {
   display: flex;
@@ -441,6 +448,33 @@ footer .logo {
 .svg-footer {
   width: 24px;
   height: 24px;
+}
+.footer-form {
+  display: flex;
+}
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  border-radius: 4px;
+  width: 264px;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--white-color);
+  margin-right: 24px;
+}
+.footer-button {
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.button-telegram {
+  margin-left: 16px;
+  display: inline-block;
 }
 /* portfolio */
 /* header */
@@ -551,6 +585,120 @@ footer .logo {
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: #e7e9fc;
+}
+.modal-title {
+  display: block;
+  margin-top: 72px;
+  font-size: 16px;
+  text-align: center;
+}
+.modal_form {
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-form-container {
+  display: flex;
+  width: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+.modal-label {
+  position: relative;
+  display: block;
+  margin-bottom: 8px;
+}
+.modal-input {
+  width: 360px;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border;
+}
+.modal-input:hover,
+.modal-input:focus,
+.modal-input:active,
+.modal-textarea:hover,
+.modal-textarea:focus,
+.modal-textarea:active {
+  border: 1px solid var(--logo-text-color);
+}
+.user-name {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--fill-color);
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+.modal-help {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--fill-color);
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+.modal-textarea {
+  width: 360px;
+  padding-top: 8px;
+  padding-left: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border;
+}
+.modal-form-field {
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.modal-check {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--secondary-text-color);
+  border-radius: 2px;
+}
+.modal-check-text {
+  margin-left: 8px;
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+.modal-check-link {
+  text-decoration: underline;
+}
+.modal-submit-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-submit {
+  width: 105px;
+  height: 24px;
+}
+.modal-svg {
+  position: absolute;
+  top: 26px;
+  left: 16px;
+  fill: var(--primary-text-color);
+}
+.modal-name-svg {
+  position: absolute;
+  top: 29px;
+  left: 16px;
+  fill: var(--primary-text-color);
+}
+.modal-label:hover .modal-name-svg,
+.modal-label:hover .modal-svg {
+  fill: var(--logo-text-color);
 }
 .backdrop.is-hidden {
   opacity: 0;
