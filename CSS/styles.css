@@ -453,28 +453,28 @@ footer .logo {
   display: flex;
 }
 .footer-input {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  background-color: transparent;
+  width: 264px;
+  margin-right: 24px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 264px;
+  background-color: transparent;
+  color: var(--white-color);
   font-size: 12px;
   line-height: 2;
-  color: var(--white-color);
-  margin-right: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-button {
-  padding: 8px 24px;
   display: flex;
   align-items: center;
   margin: 0;
+  padding: 8px 24px;
 }
 .button-telegram {
-  margin-left: 16px;
   display: inline-block;
+  margin-left: 16px;
 }
 /* portfolio */
 /* header */
@@ -568,6 +568,7 @@ footer .logo {
   left: 50%;
   width: 408px;
   height: 576px;
+  padding: 72px 24px 24px;
   background-color: var(--modal-bg-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
@@ -586,10 +587,26 @@ footer .logo {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #e7e9fc;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: border, background-color;
+}
+.close-button:hover,
+.close-button:focus {
+  border-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--primary-text-color);
+}
+.svg-close-button {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
+}
+.close-button:hover .svg-close-button,
+.close-button:focus .svg-close-button {
+  fill: var(--modal-bg-color);
 }
 .modal-title {
-  display: block;
-  margin-top: 72px;
+  margin-bottom: 14px;
   font-size: 16px;
   text-align: center;
 }
@@ -598,19 +615,16 @@ footer .logo {
   margin-right: auto;
   margin-left: auto;
 }
-.modal-form-container {
-  display: flex;
-  width: 100%;
-  padding-right: 24px;
-  padding-left: 24px;
-}
 .modal-label {
   position: relative;
   display: block;
   margin-bottom: 8px;
 }
+.modal-textarea-label {
+  margin-bottom: 0;
+}
 .modal-input {
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -620,30 +634,28 @@ footer .logo {
   transition-duration: 250ms;
   transition-property: border;
 }
-.modal-input:hover,
-.modal-input:focus,
-.modal-input:active,
-.modal-textarea:hover,
-.modal-textarea:focus,
-.modal-textarea:active {
-  border: 1px solid var(--logo-text-color);
-}
 .user-name {
   display: block;
   margin-bottom: 4px;
   color: var(--fill-color);
-  line-height: 16px;
+
+  font-size: 12px;
+  line-height: 1.33;
   letter-spacing: 0.04em;
 }
 .modal-help {
   display: block;
   margin-bottom: 4px;
   color: var(--fill-color);
-  line-height: 14px;
+
+  font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.01em;
 }
 .modal-textarea {
-  width: 360px;
+  width: 100%;
+  height: 120px;
+  display: block;
   padding-top: 8px;
   padding-left: 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -653,6 +665,13 @@ footer .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: border;
+}
+
+.modal-input:focus,
+.modal-input:active,
+.modal-textarea:focus,
+.modal-textarea:active {
+  border: 1px solid var(--logo-text-color);
 }
 .modal-form-field {
   display: flex;
@@ -673,6 +692,7 @@ footer .logo {
   letter-spacing: 0.04em;
 }
 .modal-check-link {
+  color: var(--logo-text-color);
   text-decoration: underline;
 }
 .modal-submit-button {
@@ -689,15 +709,21 @@ footer .logo {
   top: 26px;
   left: 16px;
   fill: var(--primary-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
 }
 .modal-name-svg {
   position: absolute;
   top: 29px;
   left: 16px;
   fill: var(--primary-text-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: fill;
 }
-.modal-label:hover .modal-name-svg,
-.modal-label:hover .modal-svg {
+.modal-input:focus + .modal-name-svg,
+.modal-input:focus + .modal-svg {
   fill: var(--logo-text-color);
 }
 .backdrop.is-hidden {
