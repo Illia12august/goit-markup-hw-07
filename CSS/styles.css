@@ -7,6 +7,10 @@
   --fill-color-hover: #404bbf;
   --fill-color: #8e8f99;
   --modal-bg-color: #fcfcfc;
+  /* breackpoints */
+  --phone-screen: 428px;
+  --tablet-screen: 768px;
+  --desktop-screen: 1440px;
 }
 
 body {
