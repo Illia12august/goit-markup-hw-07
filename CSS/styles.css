@@ -845,10 +845,27 @@ footer .logo {
 .address-menu {
   padding-bottom: 48px;
 }
-.contact-link-menu:first-child {
+
+.contact-link-menu {
+  display: block;
   font-weight: 600;
   font-size: 36px;
   line-height: 1.11;
   color: var(--logo-text-color);
   margin-bottom: 40px;
+}
+.email-link-menu {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* menu-social */
+.menu-social-list {
+  display: flex;
+  gap: 56px;
+}
+.menu-svg-social {
+  width: 24px;
+  height: 24px;
 }
