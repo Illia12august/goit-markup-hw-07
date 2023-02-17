@@ -13,13 +13,12 @@
 </head>
 
 <body>
+
     <header class="page-header">
         <div class="container header-flex">
             <nav>
-                <!-- logo -->
                 <div class="box">
                     <a class="logo" href="./index.html"><span class="logo-web">web</span>studio</a>
-                    <!-- links -->
                     <ul class="site-nav list">
                         <li><a class="nav-link current" href="./index.html">Studio</a></li>
                         <li><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
@@ -27,27 +26,34 @@
                     </ul>
                 </div>
             </nav>
-            <!-- email and phone -->
             <address class="contact-info">
                 <ul class="address-nav list">
                     <li>
                         <a class="contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
+
                     <li>
                         <a class="contact-link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
 
                     </li>
                 </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1489 1024">
+                    <path fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4"
+                        stroke-width="139.6364" stroke="#000"
+                        d="M62.727 932.915h1374.88M62.727 499.684h1374.88M62.727 66.454h1374.88"></path>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
-        <section class="hero section overlay">
+        <!-- <section class="hero section overlay">
             <h1 class="hero-title">Effective Solutions
                 for Your Business</h1>
             <button class="button button-primary" data-modal-open type="button">Order Service</button>
-        </section>
-        <section class="section about">
+        </section> -->
+        <!-- <section class="section about">
             <div class="container">
                 <ul class="features-list list">
                     <li>
@@ -96,9 +102,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section-title title">What are we doing</h2>
                 <ul class="image-list list">
@@ -107,7 +113,7 @@
                     <li><img src="./images/image-list/phone2.jpg" alt="phone" width="360" height="300"></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <section class="our-team section">
             <div class="container">
                 <h2 class="section-title title">Our Team</h2>
@@ -259,7 +265,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section">
+        <!-- <section class="section">
             <div class="container">
                 <h2 class="section-title title">Customers</h2>
                 <ul class="list customer-list">
@@ -307,9 +313,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer-flex">
             <div class="footer-first">
                 <a class="logo" href="./index.html"><span class="logo-web">web</span>studio</a>
@@ -369,7 +375,8 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="close-button button" data-modal-close type="button">
@@ -418,10 +425,38 @@
             </form>
         </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu" type="button">
+            <svg class="svg-close-button" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+        </button>
+
+        <ul class="list mobile-menu">
+            <li class="mobile-menu-item"><a href="#" class="link menu-link current">Studio</a></li>
+            <li class="mobile-menu-item"><a href="#" class="link menu-link">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="#" class="link menu-link">Contacts</a></li>
+        </ul>
+        <ul class="address-menu list">
+            <li class="address-menu-item">
+                <a class="contact-link-menu" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+
+            </li>
+            <li class="address-menu-item">
+                <a class="email-link-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.7/dist/jquery.inputmask.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="./js/phone-mask.js"></script>
     <script src="./js/modal.js"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>
