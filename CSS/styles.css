@@ -54,7 +54,7 @@ img {
   list-style: none;
 }
 .section {
-  padding: 92px 0;
+  padding: 96px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -80,8 +80,8 @@ img {
   max-width: 428px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .burger {
   width: 32px;
@@ -95,8 +95,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 /* logo */
@@ -198,6 +196,7 @@ img {
 }
 .header-flex {
   display: flex;
+  align-items: center;
 }
 /* site nav */
 .site-nav {
@@ -244,9 +243,6 @@ img {
 .address-nav {
   display: flex;
   row-gap: 4px;
-
-  padding-top: 24px;
-  padding-bottom: 9px;
   column-gap: 40px;
 }
 @media screen and (min-width: 768px) {
@@ -328,7 +324,7 @@ img {
   letter-spacing: 0.02em;
   margin: 0 auto 72px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-title {
     width: 496px;
     font-size: 56px;
@@ -876,14 +872,19 @@ footer .logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 392px;
-  height: 586px;
+  width: 90%;
+  min-height: 586px;
   padding: 72px 16px 24px;
   background-color: var(--modal-bg-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: visibility, opacity;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1137,8 +1138,13 @@ footer .logo {
   margin-bottom: 40px;
   color: var(--logo-text-color);
   font-weight: 600;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.11;
+}
+@media screen and (min-width: 428px) {
+  .contact-link-menu {
+    font-size: 36px;
+  }
 }
 .email-link-menu {
   color: var(--primary-text-color);
@@ -1149,7 +1155,12 @@ footer .logo {
 /* menu-social */
 .menu-social-list {
   display: flex;
-  gap: 56px;
+  gap: 30px;
+}
+@media screen and (min-width: 428px) {
+  .menu-social-list {
+    gap: 56px;
+  }
 }
 .menu-svg-social {
   width: 24px;
